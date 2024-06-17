@@ -69,6 +69,10 @@ footer {
     text-decoration: none;
     color: var(--action-text);
 }
+
+.logo>a:hover{
+    filter: drop-shadow(-1px 3px 10px var(--action-text-light));
+}
 .logo>a>img{
     display: flex;
     width: 4em;
@@ -92,6 +96,9 @@ footer {
 .header-links>li>a {
     text-decoration: none;
     color: var(--light-text);
+}
+.header-links>li>a:hover {
+    color: var(--action-text-light);
 }
 
 
@@ -147,6 +154,19 @@ footer {
     gap: 1em;
     /* border: 1px blue double; */
 }
+
+.info-cards>a{
+    text-decoration: none;
+    color: var(--dark-text);
+}
+
+.info-cards>a:hover>.card>img{
+    border-color: var(--action-text-light);
+}
+.info-cards>a:hover>.card>p{
+    color: var(--action-text);
+}
+
 
 .card {
     display: flex;
@@ -237,14 +257,25 @@ footer {
 
 footer>* {
     /* border: 1px purple dotted; */
-
 }
 
 .sign-up-btn {
     padding: .5em 1em;
+    border:.2em var(--light-text) solid;
+    border-radius: 5%;
+    background-color: var(--action-text);
 }
 
 .sign-up-btn>a {
     text-decoration: none;
     font-weight: 700;
+    color:var(--light-text);
+    padding: 1em;
+}
+
+.sign-up-btn:hover {
+    text-decoration: none;
+    font-weight: 700;
+    background-color: var(--dark-text);
+    border-color: var(--action-text-light);
 }
